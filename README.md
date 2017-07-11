@@ -16,7 +16,14 @@ a full fledged piece of software. Often called Single Page Applications or SPAs.
 
 This course focusses on modern front end web and mobile development with JavaScript. 
 In this class you will build modern, forward thinking web and native mobile 
-applications. Following industry standard practices using React, NPM, and Webpack.  
+applications. Following industry standard practices using React, NPM, and Webpack. 
+
+What makes React a good choice for building modern SPAs? React uses a Component 
+based architecture. Components represent represent distinct UI elements. Components 
+can be as simple or complex as you care to make them. Components are self contained 
+and can be reused. Components are also composable. That is you can build large and 
+complex components from many smaller components. The component based architecture is 
+flexible and easy to work with.
 
 ## Competencies & Objectives 
 
