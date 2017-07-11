@@ -37,15 +37,15 @@ flexible and easy to work with.
 
 ## Lessons 
 
-- Class 1
+- [Class 1](01-js-review-concepts)
   - Intro JavaScript Review
-- Class 2
+- [Class 2](02-es6-concepts)
   - ES6 JavaScript 
-- Class 3
+- [Class 3](03-react-intro)
   - Intro React
-- Class 4
+- [Class 4](04-components-tutorial)
   - Components and JSX
-- Class 5
+- [Class 5](05-webpack-intro)
   - Components Props and State
   - API Project
 - Class 6
