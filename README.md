@@ -8,10 +8,15 @@
 
 ## Course Overview
 
+Web sites were originally conceived as linked static HTML pages. Over time the demands
+of users and the ingenuity of developers has expanded the expectations and capabilities
+of modern web sites and pushed them into the realm of full fledged applications. These
+modern web sites are built around a single web page powered by JavaScript that acts as
+a full fledged piece of software. Often called Single Page Applications or SPAs. 
+
 This course focusses on modern front end web and mobile development with JavaScript. 
-In this class you will build modern, forward thinking web anf native mobile applications. 
-Following industry standard practices using NPM and Web pack for package and dependancy 
-management. 
+In this class you will build modern, forward thinking web and native mobile 
+applications. Following industry standard practices using React, NPM, and Webpack.  
 
 ## Competencies & Objectives 
 
@@ -77,6 +82,7 @@ concepts.
 - React: A library created at FaceBook built on 
 functional reactive programming concepts. 
 - ES6: The latest version of the JavaScript language.
+- 
 
 ### Best Practices 
 
