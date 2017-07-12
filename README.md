@@ -39,30 +39,34 @@ flexible and easy to work with.
 
 - [Class 1](01-js-review-concepts)
   - Intro JavaScript Review
+  - Challenges - JS
 - [Class 2](02-es6-concepts)
   - ES6 JavaScript 
+  - Challenges ES6
 - [Class 3](03-react-intro)
   - Intro React
-- [Class 4](04-components-tutorial)
-  - Components and JSX
+  - Challenge React Tic Tac Toe
+- [Class 4](04-styling-components)
+  - Styling components
+  - Challenge add some styles
 - [Class 5](05-webpack-intro)
-  - Components Props and State
-  - API Project
-- Class 6
-  - Styling Components
-- Class 7
   - Webpack 
-  - Project Memory Game
-- Class 8
+  - Project Matching Game 
+- [Class 6](06-lab)
   - Lab
-- Class 9
+- [Class 7](07-apis-fetch-promise)
+  - APIs, Fetch, Promise
+  - Project API
+- [Class 8](08-lab)
+  - Lab
+- [Class 9](09-react-native)
   - React Native intro
   - Native Project
-- Class 10
+- [Class 10](10-native-components)
   - Native Components
-- Class 11
+- [Class 11](11-lab)
   - Lab
-- Class 12
+- [Class 12](12-lab)
   - Lab
 
 ## Projects 
@@ -77,6 +81,16 @@ To pass this class you must:
 
 - Complete 75% of the challenges.
 - Complete all three course projects. 
+
+### List of work to complete
+
+- JS Challenges
+- ES6 Challenges
+- React intro Tic Tac Toe tutorial
+  - Tic Tact Toe challenges 
+  - Tic Tact Toe Extended Challenges
+- Component intro Challenges 
+- 
 
 ## Notes 
 

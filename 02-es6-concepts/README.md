@@ -7,6 +7,10 @@ ES6 is the new version of JavaScript. There is lots of new syntax. ES6 adds many
 features that make writing JavaScript more efficient. By learning ES6 now you will be 
 expanding your knowledge, keeping our skills up to date, and writing code more efficiently.
 
+## Schedule 
+
+...
+
 ## Some new concepts in ES6
 
 The following is a short synopsis of some of the changes and new syntax introduced 

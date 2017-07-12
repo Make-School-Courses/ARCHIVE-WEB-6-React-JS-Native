@@ -7,6 +7,10 @@ MVC architecture React would represent the V or View layer. I think that React r
 I feel that React represents a new way of thinking and is an alternative to traditional MVC
 architecture. 
 
+## Schedule 
+
+...
+
 ## Vocabulary
 
 **Components**

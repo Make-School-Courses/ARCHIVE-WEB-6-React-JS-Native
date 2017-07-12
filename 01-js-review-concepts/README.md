@@ -1,9 +1,19 @@
 # JS Basic Concepts
 
-Knowledge of JavaScript is essential to learning React. React is built entirely in JS and 
-the React components you create will require JS to make them work. The material 
-presented here is far from complete, it tries cover important JS concepts that 
-apply when working with React. 
+Knowledge of JavaScript is essential to working with React. The components you create 
+and the logic that makes them work will all be written in react. The goal of this lesson 
+is review and practice basic JavaScript, especially features that apply React. 
+
+## Schedule 
+
+...
+- p: Intro  
+- p: Review 
+- a: Work with a partner to solve the first set of challenges
+- p: study the section on functions and scope
+- a: discuss scope 
+- map filter reduce research and discuss
+...
 
 ## Types 
 

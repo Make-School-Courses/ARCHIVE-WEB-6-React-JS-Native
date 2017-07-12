@@ -11,6 +11,10 @@ in the previous 3 lessons.
 This tutorial runs in Codepen and doesn't require any special setup. You may want to create an 
 account if you want to save your work. 
 
+## Schedule 
+
+...
+
 ## Challenges 
 
 There are challenges at the end of the tutorial do them! 
