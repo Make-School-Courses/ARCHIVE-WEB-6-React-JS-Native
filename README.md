@@ -105,8 +105,10 @@ concepts.
 
 - React: A library created at FaceBook built on 
 functional reactive programming concepts. 
+- Functional programming: A style of progamming that 
+emphasizes functions, immutable data, and avoids 
+global state.
 - ES6: The latest version of the JavaScript language.
-- 
 
 ### Resources
 
