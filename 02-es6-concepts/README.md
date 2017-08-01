@@ -7,9 +7,36 @@ ES6 is the new version of JavaScript. There is lots of new syntax. ES6 adds many
 features that make writing JavaScript more efficient. By learning ES6 now you will be 
 expanding your knowledge, keeping our skills up to date, and writing code more efficiently.
 
+## Class Competencies
+
+By the of this class students should be able to:
+
+- Construct functions with the "fat arrow" syntax. 
+- Define and identify when to use var, let, and const
+- Apply the array deconstructor 
+
 ## Schedule 
 
-...
+|    | Time    | Type       | Description                          |
+|----|---------|------------|--------------------------------------|
+| 1  | 5 min   | Intro      | Class introduction                   |
+| 2  | 10 min  | Lecture    | ES6 concepts                         |
+| 3  | 10 min  | Discuss    | Students form groups and discuss     |
+| 4  | 30 min  | Present    | Groups present to class              |
+| -  | 10 min  | Break      | Doodle for inspiration               |
+| 5  | 10 min  | lecture    | Map, Filter, Reduce                  |
+| 6  | 35 min  | Challenges | Students work on challenges in pairs |
+| =  | 110 min | Total Time | -                                    |
+
+### Overview 
+
+Short lecture introduces ES6 concepts to class. Students group up with each group
+taking one ES6 concept to present. After discussing with group each group presents 
+to the class on topic. 
+
+Break
+
+After break students pair up and work on challenges. 
 
 ## Some new concepts in ES6
 
@@ -23,6 +50,10 @@ A functional and syntactical change in ES6 allows variables to be defined with:
 - `var` : Nothing new here define a variable. Declared in a function sets the scope of that variable to the function. 
 - `let` : This is new, and the same as var except in terms of scope, `let` scopes variables to a block. A block begins with `{` and ends with `}`. 
 - `const` : Defines a constant. Variables defined const can't be mutated. 
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
 
 ### Fat Arrow functions () => {}
 
@@ -47,8 +78,15 @@ New "fat arrow" functions:
 myFunc = (param) => {}
 ```
 
-*Fat arrow functions treat `this` differently than normal functions!* We will talk more
-about this later. [For more info](http://exploringjs.com/es6/ch_arrow-functions.html#sec_traditional-functions-bad-non-methods)
+*Fat arrow functions treat `this` differently than normal functions!*
+
+- [For more info](http://exploringjs.com/es6/ch_arrow-functions.html#sec_traditional-functions-bad-non-methods)
+
+### Array spread orperator ...
+
+ES6 offers a new operator that makes it easier to work with iterables. 
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator
 
 ## Your goals
 
@@ -62,7 +100,7 @@ After reading the material here and looking at the example try these challenges.
 here also appear in comments at the bottom of the example. 
 
 - For each of these challenges use the ideas from this file. Use the "fat arrow functions" 
-()=>{} and the ES6 style class defintion.
+() => {} and the ES6 style class defintion.
 - Define a class that describes weather data it should take three parameters:
 temp, date (use new Date() to make a date object), and description (eg cloudy, rainy etc.)
 - Make an array of three weather Objects each with some different values. 

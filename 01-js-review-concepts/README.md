@@ -1,129 +1,91 @@
 # JS Basic Concepts
 
 Knowledge of JavaScript is essential to working with React. The components you create 
-and the logic that makes them work will all be written in react. The goal of this lesson 
+and the logic that makes them work will all be written in React. The goal of this lesson 
 is review and practice basic JavaScript, especially features that apply React. 
+
+## Class Competencies
+
+By the of this class students should be able to:
+
+- Define JS Concepts: Types, Objects, Scope
+- Identify common methods of Array
+- Distinguish between a reference and a copy when working with objects and arrays
+- Use Map Filter and Reduce to solve problems with JS
 
 ## Schedule 
 
-...
-- p: Intro  
-- p: Review 
-- a: Work with a partner to solve the first set of challenges
-- p: study the section on functions and scope
-- a: discuss scope 
-- map filter reduce research and discuss
-...
+|    | Time    | Type       | Description                          |
+|----|---------|------------|--------------------------------------|
+| 1  | 5 min   | Intro      | Class introduction                   |
+| 2  | 10 min  | Lecture    | JavaScript Concepts discussion       |
+| 3  | 10 min  | Discuss    | Students form groups and discuss     |
+| 4  | 30 min  | Present    | Groups present to class              |
+| -  | 10 min  | Break      | Walk around the block                |
+| 5  | 10 min  | lecture    | Map, Filter, Reduce                  |
+| 6  | 35 min  | Challenges | Students work on challenges in pairs |
+| =  | 110 min | Total Time | -                                    |
 
-## Types 
+### Overview 
 
-JavaScript has a few types I'll break them down here as:
+After a short dicussion students split into groups each tasked with discussing one 
+of the topics below. After discussion with the group, each group presents their 
+conclusions to the class. 
 
-- String 
-- Number
-- Object
+Break
 
-### String 
+Short lecture on Map, Filter, and Reduce, after which students work through the 
+challenges in pairs. 
 
-Like most languages a String is a "string" of characters. Strings are defined with the 
-"" or ''. 
+## JavaScript Concepts 
 
-Combine or concatenate strings with the +. 
-
-`"hello " + "world"`
-
-**Notable methods:** 
-
-- `charAt(index)` : Returns character at index.
-- `substr(start [, length])` : Returns the characters in a string begining at start continuing through 
-length.
-
-**Properties:**
-
-- length : property returns the number of characters in a string. 
-
-[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-
-### Number 
-
-A Number is any number float or int, positive or negative. 
-
-** Notable methods:** 
-
-- `isNaN()` : Returns true if the value is NOT a number. (NaN == Not a Number) 
-- `toFixed(points)` : Returns a string representation of the number with a fixed number of decimal 
-points. 
-
-[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-
-### Array 
-
-An array is a collection of elements. Elements can be any type and mixed. Array supports 
-many methods that manipulate the content of an array. 
-
-In JS Arrays are passed by reference! 
-
-**Important properties:**
-
-- `length` : Returns the count of the array.
-
-**Notable methods:**
-
-- `push()` : Adds an element to the end of an array.
-- `pop()` : Removes the last element from an array and returns it.
-- `shift()` : Removes the first element of an array and returns it.
-- `unshift()` : Adds one or more items to the front of an array.
-- `concat(array [, array2, ...])` : Merges two or more arrays returns a __new array__! 
-- `slice([begin, end])` : Returns a __copy of an array__ containing the items between begin and end.
-
-- `filter(function)` : Returns a __new array__ made up of items for which the function returns true.
-- `map(function)` : Returns a __new array__ by applying the function to each item.
-- `reduce(function)` : Returns a single value using an accumulator fucntion.
-
-**Array is a deep subject in JS!**
-
-Some of the methods above return a modified array while others return a copy, or a new 
-array. These distinctions are important to functional programming, React, and Redux. 
-
-[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+Three JavaScript concepts that will be important to React. 
 
 ### Objects
 
-Objects are collections of key value pairs. Values in Objects can be anything including 
-functions! JavaScript doesn't have classes like other languages. Instead classes are 
-represented by Objects. 
+JavaScript supports 5 primitives everything else is objects. With your group discuss
+Objects in JavaScript and define a short list of the most important features of 
+Objects.
 
-[Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+### Array Map Filter Reduce
 
-### Functions 
+Array's are one of the most important methods for storing and organizing data. 
+Discuss Arrays with your group and present a short overview of the most important 
+methods of Array.
 
-Functions in JS are similar to other languages they take in parameters and return values.
+### Scope
 
-[Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
+Scope is an important topic. Discuss scope with your group and present a short 
+dicussion explaining scope. 
 
-## Your goals 
+### Classes
 
-Follow the examples [here](./index.html) and complete the challenges at the end. Open the  
-example and follow the code contained there for a live example. 
+_Bonus topic_
 
-- [Example 1](./index.html)
+Discuss classes in JavaScript with your group. Present a short discussion to the group 
+on Classes in JavaScript. 
 
-If you feel comfortable solving the challenges move on to the next section. If not follow up the 
-reading material to learn more about the material covered here. Return to the challenges and finish
-them. 
+## JavaScript Basics
 
-### Challenges 
+This document contains a short list of JavaScript concepts for your review with links to more 
+information. 
 
-Try the following challenges to test your knowledge of the JS concepts covered above. The challenges
-also appear in comments at the bottom of the example. 
-    
+[JavaScript Concepts](js-concepts.md)
+
+### Challenges
+
+Complete the following challenges to test your knowledge of the JS concepts covered above. 
+(The challenges also appear in comments at the bottom of the example.)
+
+...Rewrite these with better focus...
+
 - Create a function that takes a name and title and returns an object containing these two properties
 The object should look something like: {name: "Rudolf", title: "leader of the pack"}
 - Define an array (nameTitle) then push 5 name/title objects from your function.
 - Write a function that takes a letter (a, b, c, etc) and returns an array containg all of the
-names from nameTitle that begin with that letter. Use array.filter. 
+names from nameTitle that begin with that letter. Use array.filter.
 - Write a function takes a title, and returns an array of all objects that have a matching title. 
-Use filter again. 
+Use filter again.
 - Write a function that returns an array containing strings made from the names and titles. 
 Each string should look like: "Name Title" or "Diana the duchess of york" or something similar. 
 Use array.map().
@@ -142,6 +104,7 @@ Use array.map().
 - [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 
 Online tutorials 
+
 - [CodeAcademy JavaScript](https://www.codecademy.com/learn/javascript)
 - [JavaScript Koans](https://github.com/mrdavidlaing/javascript-koans)
 - 

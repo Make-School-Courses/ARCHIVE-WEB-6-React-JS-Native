@@ -12,18 +12,15 @@ Web sites were originally conceived as linked static HTML pages. Over time the d
 of users and the ingenuity of developers has expanded the expectations and capabilities
 of modern web sites and pushed them into the realm of full fledged applications. These
 modern web sites are built around a single web page powered by JavaScript that acts as
-a full fledged piece of software. Often called Single Page Applications or SPAs. 
+a full fledged piece of software, often called Single Page Applications or SPAs. 
 
 This course focusses on modern front end web and mobile development with JavaScript. 
-In this class you will build modern, forward thinking web and native mobile 
-applications. Following industry standard practices using React, NPM, and Webpack. 
+In this class you will build modern, forward thinking web and native applications. 
+The toolset will be React, React-Native, NPM, Webpack.  
 
 What makes React a good choice for building modern SPAs? React uses a Component 
-based architecture. Components represent represent distinct UI elements. Components 
-can be as simple or complex as you care to make them. Components are self contained 
-and can be reused. Components are also composable. That is you can build large and 
-complex components from many smaller components. The component based architecture is 
-flexible and easy to work with.
+based architecture. React uses a unidirectional data flow which makes it perfect 
+for making user interfaces, and improves on legacy methods.  
 
 ## Competencies & Objectives 
 
@@ -33,7 +30,7 @@ flexible and easy to work with.
 1. Compare component based architecture to traditional patterns like MVC. 
 1. Design applications built from components.
 1. Create component based architecture. 
-1. Create web and native apps from a JS code base. 
+1. Create web and native apps from a JS code base.
 
 ## Lessons 
 
@@ -45,7 +42,7 @@ flexible and easy to work with.
   - Challenges ES6
 - [Class 3](03-react-intro)
   - Intro React
-  - Challenge React Tic Tac Toe
+  - Challenges Components intro
 - [Class 4](04-styling-components)
   - Styling components
   - Challenge add some styles
