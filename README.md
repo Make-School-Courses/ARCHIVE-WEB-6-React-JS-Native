@@ -108,10 +108,6 @@ functional reactive programming concepts.
 - ES6: The latest version of the JavaScript language.
 - 
 
-### Best Practices 
-
-- 
-
 ### Resources
 
 - React: https://facebook.github.io/react/
