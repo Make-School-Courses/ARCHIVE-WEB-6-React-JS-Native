@@ -1,10 +1,14 @@
-# Front End Web 1
+# WEB 6 - React JS/Native
 
 ## Perequisites 
 
 - HTML
 - CSS
 - JavaScript
+
+Useful but not required
+
+- Knowledge of iOS and Xcode
 
 ## Course Overview
 
@@ -87,7 +91,9 @@ To pass this class you must:
   - Tic Tact Toe challenges 
   - Tic Tact Toe Extended Challenges
 - Component intro Challenges 
-- 
+- Matching Game Project
+- API Project 
+- Native Project
 
 ## Notes 
 
