@@ -11,7 +11,7 @@ better than learning from the source!
 - https://facebook.github.io/react/tutorial/tutorial.html
 
 What is said in this tutorial about "lifting up state" is great 
-guidence.  
+guidence.   
 
 - Passing Data through props
 - making Interactive Components

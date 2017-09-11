@@ -78,17 +78,25 @@ for making user interfaces, and improves on legacy methods.
 
 ## Evaluations
 
-To pass this class you must: 
+To pass this class you must:  
 
-- Complete 75% of the challenges.
-- Complete all three course projects. 
+Complete all three projects and 100% of the challenges. 
 
-### List of work to complete
+### Challenges
 
-- JS Challenges
-- ES6 Challenges
-- React intro Tic Tac Toe tutorial
-  - Tic Tact Toe challenges 
+Complete all of the challenges from each class. 
+
+- Class 01 - 10 JS Challenges
+- Class 02 - 5 ES6 Challenges
+- Class 03 - 7 React Challenges
+- Class 04 - 
+
+#### Projects
+
+Complete these projects. One of the projects must be created with 
+React, and another with React Native.
+
+- Tic Tact Toe challenges 
   - Tic Tact Toe Extended Challenges
 - Component intro Challenges 
 - Matching Game Project
