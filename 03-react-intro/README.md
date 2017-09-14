@@ -49,6 +49,8 @@ Fork the repository here:
 
 https://github.com/Product-College-Labs/React-Intro-Challenges
 
+Complete as many of the challenges as you can. Push your work to your fork. 
+
 
 
 
