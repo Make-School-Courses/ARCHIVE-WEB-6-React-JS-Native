@@ -32,7 +32,7 @@ everything using Webpack.
 A big piece of React is JSX. JSX is an extension of the JavaScript language that adds an XML/HTML
 like syntax to regular JavaScript. JSX *must* be compiled before it can be used in a browser.
 
-In short JSX allows you to write HTML like tags alongside vanilla JS. This JSX creates HTML 
+In short JSX allows you to write HTML like tags alongside vanilla JS. JSX you write creates HTML 
 elements that are eventually added to the DOM and displayed in the browser. 
 
 An example of JavaScript and JSX. 
@@ -47,23 +47,22 @@ You can see the function above returns a div tag. There is no need for quotes. T
 as a string! This is JSX. The function above could be a simple React Component! (We'll talk about
 components later...)
 
-JSX has a few syntactical rules that you will learn along the way. 
+JSX has a few syntactical rules that you will learn along the way.  
 
-An HTML element is defined by tags. Tags are those name value pairs that appear within the opening 
-tag. For example: 
+JSX elements are defined with the same syntax used by HTML elements. 
 
-`<div class="foo"></div>`
+`<div className="foo"></div>`
 
-Tags have Attributes. Attributes defined in `name=value` pairs.
+JSX elements have Attributes. Attributes defined in `name=value` pairs just like HTML.
 
-`Class` is an attribute `foo` is the value. 
+`className` is an attribute `foo` is the value. 
 
 When the value is a string just quote it like normal. In JSX the value of an attribute can be 
-JavaScript expression, in this case you must wrap the value in the `{}`. For example: 
+JavaScript expression, in this case you must wrap the value in the `{expression}`. For example: 
 
 ```
 var name = "bar";
-<div class={bar} width={2 * 100}></div>
+<div className={bar} width={2 * 100}></div>
 ```
 
 In the example we want to use a variable as the value of an attribute in a JSX expression, or in the
@@ -72,15 +71,14 @@ JavaScript expression must be wrapped in `{}`.
 
 ## Components
 
-React Components can be defined in one of two ways: either as a function that returns JSX, or 
-a class that *extends* `React.Component` and includes a `render()` method. Here is a simple example 
-of each: 
+React Components can be defined in one of two ways. Either as a function that returns JSX, or 
+a class that *extends* `React.Component` and includes a `render()` method. 
 
 **Function based component**
 
 ```
 var ExampleComponent = () => {
-  return <h1>Hello World</h1>;
+  return <h1>Hello World</h1>; // returns JSX expression
 }
 ```
 
@@ -89,12 +87,27 @@ var ExampleComponent = () => {
 ```
 class MyComponent extends Component {
   render() {
-    return <h1>Hello World</h1>;
+    return <h1>Hello World</h1>; // Render method returns JSX expression
   }
 }
 ```
 
-You could use these components expressing them with JSX: 
+To return a multiline JSX expression wrap it in parenthesis: 
+
+```
+class MyComponent extends Component {
+  render() {
+    // The expression returned here is wrapped in ()
+    return (
+        <div>
+            <h1>Hello World</h1>
+        </div>
+      ); 
+  }
+}
+```
+
+An empty JSX element can omit the closing tag and end with />. 
 
 `<ExampleComponent />`
 
@@ -104,8 +117,8 @@ or
 
 ## Attributes and Props
 
-Attribute valuse are passed into React Component as `props`. Props is always a JS object with key 
-valuse defined by attirbutes, Here is an example:
+Attribute values are passed into React Component as `props`. Props is always a JS object with keys 
+values defined by attirbutes, Here is an example:
 
 **A functional Component with props**
 
@@ -115,18 +128,26 @@ functional components receive props as a parameter.
 var MyWidget = (props) => {
   return <h1>{props.message}</h1>;
 }
+
+<MyWidget message="Hello" />
 ```
 
 **Class based Component with props**
 
 Class based components are inialized with props, so props is accessed via `this`.
+You should define a `constructor` that takes props. You should call super(props).
 
 ```
 class MyWidget extends Component {
+  constructor(props) {
+    super(props)
+  }
   render() {
     return <h1>{this.props.message}</h1>;
   }
 }
+
+<MyWidget message="FTW" />
 ```
 
 ## Using components
@@ -137,13 +158,13 @@ A React component might be written with JSX and might look like this:
 <MyWidget message="Hello World" /> 
 ```
 
-When JSX appears it must always have a top level element. The follow is **NOT** legal!
+When JSX appears it must always have a top level element. The following is **NOT** legal!
 
 ```
 <Foo>Hello</Foo>
 <Bar>World</Bar>
 ```
-The follow would be legal:
+This would be legal:
 
 ```
 <div>
