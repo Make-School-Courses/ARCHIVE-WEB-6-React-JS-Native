@@ -10,12 +10,23 @@ better than learning from the source!
 
 - https://facebook.github.io/react/tutorial/tutorial.html
 
-What is said in this tutorial about "lifting up state" is great 
-guidence.   
+Pay close attention to the section on "lifting up state" this gets to 
+a key aspect of React best practice. Digging deeper it says a lot 
+about how React/Components differ from MVC architecture. 
+
+Important points from the tutorial:
 
 - Passing Data through props
 - making Interactive Components
 - Lifting up state
+
+## Projects 
+
+After working on tutorials you will want to make your own project. 
+Your goal is to comlete the two projects before the end of the term. 
+
+- API project 
+- 
 
 ## Schedule 
 
@@ -29,5 +40,3 @@ guidence.   
 | 5  | 30 min  | Present    | Groups present to class              |
 | 6  | 20 min  | Challenges | Continue the challenges!             |
 | =  | 110 min | Total time | -                                    |
-
-### Overview 
