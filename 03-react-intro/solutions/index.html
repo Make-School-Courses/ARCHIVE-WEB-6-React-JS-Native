@@ -6,28 +6,20 @@
     <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
     <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    
+
     <style>
         body {
             font-family: Helvetica;
             font-size: 18px;
         }
-        
-        h1, small {
+
+        h1 {
             text-align: center;
-            display: block;
         }
-      
-      button {
-        padding: 5px;
-        margin: auto;
-        display: block;
-      }
     </style>
 </head>
 
 <body>
-
     <div id="app">
         <!-- App -->
     </div>
@@ -35,19 +27,15 @@
     <!-- JavaScript -->
     <script type="text/babel">
 
-        const HeadingWithSubheading = (props) => {
-          return (
-            <div>
-              <Title title={props.title} />
-              <small>{props.subtitle}</small>
-            </div>
-          );
-        }
+        // --------------------------------
+        // Simple Component
 
+        // A simple component is just a function that returns JSX.
+        // A simple component takes a props object as an argument
+        // that contains values used to configure the component.
+        
         // --------------------------------
-        // Simple Component 
-        // --------------------------------
-        function Title(props) {
+        const Title = (props) => {
             return (
                 <h1>{props.title}</h1>
             );
@@ -55,126 +43,229 @@
         // --------------------------------
 
 
-        // **************************************************************
+
+
+
+
+
+        // --------------------------------
+        // Stateful Component
+
+        // A stateful component is defined as a class. The class below
+        // uses the ES6 style of class definition.
+        // A stateful component must provide a render method that returns
+        // JSX.
+        // It's constructor takes in a props object with values to configure
+        // the component.
+        // The component can define a state object that contains values the
+        // component uses to define it's "state". Values on state should be
+        // changed by calling setState( obj ) with an object containing new
+        // values. Changing values in this way will cause the component to
+        // rerender! You can see this in the example below in the tick()
+        // method. Here the date property on state is changed by calling
+        // setState() and passing an updated value. This causes the render
+        // method to update and display the new time.
+
+        // Notice the time to display is passed to the Title component
+        // as title this causes the Title component to render and it receives
+        // props.title which it displays.
+
+        // --------------------------------
         
-        //  Timer
-
-        class Timer extends React.Component {
-            constructor(props) {
-                super(props);
-              
-                this.startCount = props.count ? props.count : 10;
-              
-                console.log(props.on === undefined ? true : false);
-              
-                this.state = {
-                    count: props.count ? props.count : 10,
-                    isOn: props.on == undefined ? true : false,
-                };
-                this.timerId = setInterval(() => this.tick(), 1000);
-            }
-
-            componentWillUnmount() {
-                clearInterval(this.timerId);
-            }
-
-            tick() {
-                if (this.props.on) {
-                  this.setState({count: this.state.count -= 1});    
-                }
-            }
-
-            render() {
-                return (
-                    <Title title={this.state.count % this.startCount} />
-                );
-            }
-        }
-  
-        // **************************************************************
-      
-        // **************************************************************
-        
-        //  Stopwatch
-
-        class Stopwatch extends React.Component {
+        class CheckClock extends React.Component {
           constructor(props) {
             super(props);
             
-            this.state = { isRunning: props.isRunning }
-          }
-
-          startStop() {
-            this.setState({ isRunning: !this.state.isRunning });
-          }
-
-          render() {
-            console.log(this.state.isRunning);
-            console.log(this.props.count);
+            this.state = {
+              clockATime: 0,
+              clockBTime: 0,
+              isTunning: {clock: "A"}
+            };
             
-            const label = this.state.isRunning ? "Stop" : "Start";
-
-            return (
-                <div className='stopwatch'>
-                  <Timer count={ this.props.count } on={ this.state.isRunning } />
-                  <button onClick={ () => {
-                    this.startStop();
-                  } }>{label}</button>
-                </div>
+          }
+          
+          
+          render() {
+            return ( 
+              <div>
+                <Clocky time={this.state.clockATime} />
+                <Clocky time={this.state.clockATime} />
+              </div>
             );
           }
         }
-  
-        // **************************************************************
-
-
-        // --------------------------------
-        // Stateful Component 
-        // --------------------------------
+        
+        const Clocky = (props) => {
+          return (<div>{props.time}</div>)
+        }
+        
+        
+        
+        
+        
         class Clock extends React.Component {
             constructor(props) {
                 super(props);
+              
+                this.deltaTime = Date.now();
                 this.state = {
-                    date: new Date(),
-                    isOn: true
+                  time: 0,
+                  isRunning: true
                 };
-                this.timerId = setInterval(() => this.tick(), 1000);
+                this.startTimer();
+            }
+
+            startTimer() {
+              this.deltaTime = Date.now();
+              this.timerId = setInterval(() => this.tick(), 500);
+            }
+
+            stopTimer() {
+              clearInterval(this.timerId);
             }
 
             componentWillUnmount() {
-                clearInterval(this.timerId);
+                this.stopTimer();
             }
 
             tick() {
-                this.setState({date: new Date()});
+              const now = Date.now();
+              const t = now - this.deltaTime;
+              this.deltaTime = now;
+              // console.log(this.state.time);
+              this.setState({time: this.state.time + t});
+            }
+
+            toggle() {
+              this.setState({isRunning: !this.state.isRunning});
+              if (this.state.isRunning) {
+                this.stopTimer();
+              } else {
+                this.startTimer();
+              }
+            }
+
+            padWithZeros(n) {
+              return n < 10 ? "0" + n : n.toString();
+            }
+
+            formatTime(utc) {
+              const s = Math.floor(utc / 1000);
+              const m = Math.floor(s / 60);
+              const h = Math.floor(m / 60);
+
+              const secs = this.padWithZeros(s % 60);
+              const mins = this.padWithZeros(m % 60);
+              const hrs = this.padWithZeros(h % 60);
+
+              return `${hrs}:${mins}:${secs}`;
+            }
+          
+            test(e) {
+              console.log("test function");
+              console.log(this.state);
+              console.log(this);
             }
 
             render() {
-
-                const date = this.state.date;
-                const h = date.getHours();
-                const m = date.getMinutes();
-                const s = date.getSeconds();
-                const displayTime = `${h}:${m}:${s}`;
+                const displayTime = this.formatTime(this.state.time);
+                const label = this.state.isRunning ? "Stop" : "Start";
 
                 return (
-                    <Title title={displayTime} />
+                    <div>
+                      <Title title={displayTime} />
+                      <Button label={label} onClick={() => {
+                        this.toggle();
+                      }} />
+                      
+                      <Button label="Problem with this" onClick={this.test} />
+                      <Button label="No Problem with this" onClick={this.test.bind(this)} />
+                      <Button label="No here either" onClick={(e) => {
+                        this.test(e);
+                      }} />
+                      <Button label="What about Function?" onClick={function(e) {
+                        console.log(this);
+                        this.test(e);
+                      }} />
+                    </div>
                 );
             }
         }
-        // -------------------------------- 
+        // --------------------------------
 
-        // Renders reacts virtual DOM. 
+        const Button = (props) => {
+          
+          return (<button onClick={(e) => {
+                props.onClick();
+          }}>
+            {props.label}
+          </button>);
+        }
+        
+        
+        
+        
+        const OtherButton = (props) => {
+          return (
+            <button onClick={props.onClick}>
+              {props.label}
+            </button>
+          );
+        }
 
         // --------------------------------
+        // List
+        // --------------------------------
+        // This component will display a list of items provided by an array
+        // on props. Best practice, transform the array into an array of JSX!
+        // React will render the entire list if given an array of JSX items.
+        // Each item should have a unique key value!
+
+        class SmartList extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {
+              list: []
+            }
+          }
+          
+          render() {
+            
+          }
+        }
+        
+        const List = (props) => {
+          const items = props.items.map((item, index) => {
+            return <li key={index}>{item}</li>;
+          });
+
+          return (
+            <ul>
+              {items}
+            </ul>
+          );
+        }
+        // ----------------------------------
+
+
+        // These things will be displayed in the list.
+        const things = ["A", "B", "C"];
+
+
+
+        // --------------------------------
+        // Renders reacts virtual DOM.
+        // --------------------------------
+        // This handles displaying the React stuff in the browser.
+        // Each of the react components is rendered as standard HTML
+        // at this stage.
+
         ReactDOM.render(
             <div>
-                <HeadingWithSubheading title="React Timer" subtitle="Counts in secs." />
+                <Title title="Simple React Starter" />
                 <Clock />
-                <Timer count={6} />
-                <Timer count={6} on={ false } />
-                <Stopwatch count={10} isRunning={true} />
-            </div>, 
+                <List items={things} />
+            </div>,
             document.getElementById('app')
         );
     </script>

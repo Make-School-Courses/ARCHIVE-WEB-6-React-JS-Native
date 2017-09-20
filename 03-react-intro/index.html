@@ -38,6 +38,10 @@
         }
         // --------------------------------
 
+        const Button = () => {
+          return <button>Hello</button>;
+        }
+
 
         // --------------------------------
         // Stateful Component 
@@ -69,7 +73,13 @@
                 const displayTime = `${h}:${m}:${s}`;
 
                 return (
-                    <Title title={displayTime} />
+                    <div>
+                      <Title title={displayTime} />
+                      <Button onClick={() => {
+                        console.log("Hello button!!!!");
+                      }} />
+                    </div>
+                    
                 );
             }
         }
