@@ -131,13 +131,18 @@ to use.
 
 You can browse vaious React starter projects here: http://andrewhfarmer.com/starter-project/
 
+#### Create React App
+
 Create React app is a command line tool from FaceBook that builds a pretty good starter 
 project, try it here: https://github.com/facebookincubator/create-react-app
+
+Note! Create React App does not use Webpack, it uses a similar but different system. Be sure
+to read the documentation. Find the documentation for Create React App [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
 Here are two more you might try. These two projects contain Redux, which is an app state
 management library that works with React. Installing it with your starter project is 
 easier than adding it later. If you think you might use Redux in the future you might 
-want to intall from the start, 
+want to intall from the start.
 
 - https://github.com/DimitriMikadze/express-react-redux-starter
 - https://github.com/davezuko/react-redux-starter-kit
