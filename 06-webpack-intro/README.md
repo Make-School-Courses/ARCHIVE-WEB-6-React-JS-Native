@@ -154,6 +154,15 @@ that some of the things look a little different.
 
 ### Import, Export, default and Module
 
+Import, Export, default are an altertantive to require. These are part of a feature called
+ES6 Modules which is not supported by yet. These do the same thing that require() and module.exports
+does. Behind the scenes the new syntax is compiled by Babel to require() and module.exports. In the 
+future ES6 Modules will have support. 
+
+Read more about this:
+
+http://adrianmejia.com/blog/2016/08/12/Getting-started-with-Node-js-modules-require-exports-imports-npm-and-beyond/
+
 Modules are imported using node. Each file acts as a "module". A module is a seprate object 
 and contains all elements defined in the **file** in a separate scope. To link code from 
 module to module you'll need to export and export. 
