@@ -47,19 +47,16 @@ for making user interfaces, and improves on legacy methods.
 - [Class 3](03-react-intro)
   - Intro React
   - Challenges Components intro
-- [Class 4](04-styling-components)
-  - Styling components
-  - Challenge add some styles
-- [Class 5](05-webpack-intro)
-  - Webpack 
-  - Project Matching Game 
-- [Class 6](06-lab)
-  - Lab
-- [Class 7](07-apis-fetch-promise)
-  - APIs, Fetch, Promise
-  - Project API
+- [Class 4](04-component-tutorial)
+  - React Component Tutorial
+- [Class 5](05-lab)
+  - Lab Time
+- [Class 6](06-webpack-intro)
+  - Bundling JS with Webpack
+- [Class 7](07-lab)
+  - Lab Time
 - [Class 8](08-lab)
-  - Lab
+  - Lab Time
 - [Class 9](09-react-native)
   - React Native intro
   - Native Project
