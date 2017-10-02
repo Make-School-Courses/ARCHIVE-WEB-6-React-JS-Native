@@ -96,4 +96,3 @@ This is a more detailed version that shows how you might build this to get the
 layout to more accurately match the mock up. 
 
 ![weather-mockup-wire-simple](weather-mockup-wire-simple.png)
-    
