@@ -6,17 +6,12 @@ Build for native with React using JavaScript!
 
 ## Overview 
 
-React Native creates a truly native projects that run on React. These are not
+React Native creates a *truly native* projects that run on React. These are *not*
 hybrid HTML apps. 
 
 As native apps they make use of many of the built in UI objects. As such 
-many of the HTML elements are not available. 
-
-Remember that React is built from Components and Components always produce 
-a view built from JSX. In React Native you will build Components from JSX 
-in the same way but standard HTML tags are not available. Instead you will use 
-Component tags that represent native objects. These will have names that are 
-similar to UI Components from UIKit.
+many of the HTML elements are replaced with a native equivalent. Even though
+the elements are different they are still implemented in the same way. 
 
 For example the following are not available. 
 
@@ -24,8 +19,7 @@ For example the following are not available.
 - h1-6 
 - input 
 
-These while not standard HTML tags are available via the 'react-native' 
-package. 
+Here are some of the component/tags available via the 'react-native' package. 
 
 - View
 - Text
@@ -33,25 +27,23 @@ package.
 - ListView
 - Button
 - Image
-- and more...
+- ...
 
-The example below provide a couple Components that you can add to a React-Native
-project. These make use of the following React Native Components. 
-
-- Fetch 
-- View
-- Text
-
-Import these packages like this: 
+Import these from the `react-native` package like this: 
 
 `import { Text, View } from 'react-native';`
 
-`fetch()` is a global method! 
+Many global JavaScript methods like `fetch()` are available in React native also!
 
 ### Styles 
 
-Styles are handled a little differently. You'll need to make a styleSheet 
-object with
+Styles are handled a little differently. You will want to use the styled component
+strategy. That is place the styles within the component definition. 
+
+You'll need to make a styleSheet object with. Create a new stylesheet as a JavaScript 
+Object assigning style properties in camel case. Units are always points. React Native
+only supports a subset of the available CSS style properties and some of the values 
+differ. Be sure to consult the [docuementation](https://facebook.github.io/react-native/docs/style.html).
 
 ```
 import { StyleSheet } from 'react-native'
@@ -105,91 +97,3 @@ layout to more accurately match the mock up.
 
 ![weather-mockup-wire-simple](weather-mockup-wire-simple.png)
     
-## React native components
-
-React Native supports many of the Components found on mobile. 
-
-### ScrollView 
-
-ScrollView is a component that creates scrolling content. It is very easy to 
-use. Keep in mind that ScrollView displays content that overflows the 
-ScrollView while the ScrollView itself must limit the area it covers. 
-Usually you will want to make sure the view containing the ScrollView takes 
-up the whole screen usually this is means that container view has a a flex 
-value of 1. Scroll view can horizontal and vertical (set the horizontal prop).
-
-#### Challenge 
-
-Try the ScrollView in your app. 
-
-- Create a ScrollView that contains all of your weather data. 
-- Use the Daily forcast data to display in a scrollView. 
-- Add daily data to a scrollView set to horizonal.
-
-### Images
-
-Add images to your project folder. To display an image in your app you'll 
-need to require it. 
-
-Import the Image component: 
-
-`import { Text, View, StyleSheet, ScrollView, Image } from 'react-native';`
-
-Require the image:
-
-`<Image source={require('../images/Cloud-rain.png')} />`
-
-Here the image file would need to be in a folder named `images` in the root 
-of the project. 
-
-#### Challenge
-
-- Import an image and display it as part of your app. 
-- Import an image that matches the "icon" for the weather. 
-
-### JavaScipt Dates and formatting
-
-You'll need to format dates. Darkskys provides the date as a Unix Timestamp. 
-You will need to convert this to a JS Date. JS time stamps are tracked in 
-miliseconds while Uniz Timestamps are tracked in Seconds. 
-
-Make a new Date Object with: 
-
-`new Date()`
-
-Make a new Date Object with a Unix timestamp like this: 
-
-`new Date(timestamp * 1000)`
-
-With a Date object you can produce dates in various default formats, make a custom
-date, or extract a feature of the date like the hours, minutes, seconds, day, month, 
-or year. 
-
-Take a look at
-
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-
-#### Challenges 
-
-- Format the Date provided by DarkSkys. 
-    - Use of the default date formats like `date.toLocaleString()`
-
-### Organizing Components
-
-React projects are built on components. With well planned structure and organization 
-your projects components will make your projects more flexible and easier to 
-manage. Here are a few ideas to make your work easier. 
-
-**Simple vs Stateful components**
-
-Whenever possible use simple components. Simple components have better performance
-and are easier to write and maintain. 
-
-**More Smaller components**
-
-As a general rule perfer creating more simple components rather than larger 
-monolithic components. This will have the effect of simplifying the process of styles, 
-and make your work more modular.
-
-****
-
