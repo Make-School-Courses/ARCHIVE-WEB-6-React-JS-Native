@@ -24,6 +24,7 @@ const app = express();
 // initialize middleware.
 // Note! Middleware is applied in the order it is initialized order matters!
 app.use(express.static('public'));
+app.use(express.static('uploads'));
 app.use('/uploads', express.static(__dirname + '/uploads'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -35,6 +36,7 @@ app.engine('.hbs', exphbs({
   defaultLayout: 'main'
 }));
 app.set('view engine', '.hbs');
+
 
 // Controllers
 require('./controllers/post-controller')(app);

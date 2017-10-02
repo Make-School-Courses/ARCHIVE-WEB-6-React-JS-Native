@@ -50,7 +50,8 @@ class SearchBar extends Component {
       <form onSubmit={(e) => {
         this.formSubmit(e);    /* handle onSumbit from the search bar here */
       }} style={styles.form}>
-        <input
+
+      <input
           style={styles.input}
           /* Set a placeholder for this component */
           placeholder={this.props.placeholder}
@@ -60,7 +61,9 @@ class SearchBar extends Component {
           onChange={(e) => {
             this.formInput(e);  /* Handle change in the input field here */
           }} />
-        <button type="submit" style={styles.submit}>Submit</button>
+
+        <button type="submit" style={styles.button}>Submit</button>
+
       </form>);
   }
 }
@@ -70,44 +73,25 @@ export default SearchBar;
 const styles = {
   form: {
     display: 'flex',
+    justifyContent: 'flex-start',
     alignItems: 'stretch',
-    justifyContent: 'space-between',
 
-    width: 400,
+    border: 'solid 1px #000',
+    width: '400px',
     margin: 'auto',
+  },
+  button: {
+    width: "100px",
+    height: "50px",
 
-    borderWidth: 1,
-    borderColor: '#000',
-    borderStyle: 'solid'
+    backgroundColor: '#2d4',
+    borderRadius: 6,
+    border: 'none',
+    color: 'rgba(255, 255, 255, 0.9)',
+    padding: '5px 7px 5px 7px'
   },
   input: {
     flex: 1,
-    padding: 8,
-    fontSize: 18,
-    margin: 5,
-    marginRight: 0,
-    borderRadius: 6,
-    borderTopRightRadius: 0,
-    borderBottomRightRadius: 0,
-    borderStyle: 'solid',
-    borderColor: '#ddd',
-    borderWidth: 3,
-    shadowColor: '#000',
-    shadowRadius: 10,
-    shadowOpacity: 1,
-  },
-  submit: {
-    margin: 5,
-    marginLeft: 0,
-    width: 100,
-    padding: 10,
-    margin: 5,
-    borderRadius: 6,
-    borderTopLeftRadius: 0,
-    borderBottomLeftRadius: 0,
-    backgroundColor: '#9bf',
-    border: 'none',
-    fontSize: 18,
-    color: '#fff'
+    fontSize: '12px'
   }
-}
+};

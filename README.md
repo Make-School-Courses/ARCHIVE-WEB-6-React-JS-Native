@@ -55,8 +55,8 @@ for making user interfaces, and improves on legacy methods.
   - Bundling JS with Webpack
 - [Class 7](07-lab)
   - Lab Time
-- [Class 8](08-lab)
-  - Lab Time
+- [Class 8](08-styling-components)
+  - Styling components 
 - [Class 9](09-react-native)
   - React Native intro
   - Native Project

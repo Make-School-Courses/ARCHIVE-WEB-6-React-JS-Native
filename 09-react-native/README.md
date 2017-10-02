@@ -36,7 +36,7 @@ package.
 - and more...
 
 The example below provide a couple Components that you can add to a React-Native
-project. THese make use of the following React Native Components. 
+project. These make use of the following React Native Components. 
 
 - Fetch 
 - View
@@ -83,17 +83,27 @@ end up in the console.
 
 ## Challenges
 
-- Follow the React-Native getting started guide
-    - Install React-Native
-    - Create a new project and run it 
-- Add the example Components to your project and test each. 
-    - Look closely at how components are styled. 
-    - Change the some styles to get a feel for how this works. 
-        - Set the font color and size. 
-        - Set the size and background color of a view. 
-- Read the weather.js component carefully. 
-- Combine the components to display the weather. 
-    - Use a View and Text component to dispay the temp as large text. 
+- Follow the React-Native [getting started guide](https://facebook.github.io/react-native/docs/getting-started.html)
+    - Install React-Native and commandline tools. 
+    - Create a new project and run it.
+- React Native relies heavily on Flex Box for layout. Complete this tutorial. 
+  - [Flex box froggy tutorial](http://flexboxfroggy.com)
+- Use the the View and Text components to mock up the weather app.  
+    - Look at the mock up images. Your job is to recreate this.  
+    - You will need to use Flex box to set the layout. 
+    
+Your finished challenge should close to this. 
+
+![weather-mockup](weather-mockup.png)
+
+This is simple version shows generally how you might plan your layout. 
+
+![weather-mockup-wire-simple](weather-mockup-wire-simple.png)
+
+This is a more detailed version that shows how you might build this to get the 
+layout to more accurately match the mock up. 
+
+![weather-mockup-wire-simple](weather-mockup-wire-simple.png)
     
 ## React native components
 
