@@ -179,7 +179,29 @@ As a general rule perfer creating more simple components rather than larger
 monolithic components. This will have the effect of simplifying the process of styles, 
 and make your work more modular.
 
-****
+## Challenges! 
+
+Your goal is to practice your React Native skills by making a simple app from the examples 
+presented. 
+
+1. Make a functioning weather app. Your app should display the current.
+  - Temp
+  - Date
+  - Location
+  - Weather description
+  - Get the current geo location fro the phone
+2. Use ScrollView to display daily weather forecast 
+  - Define a component for each row in the ScrollView
+  - Each row component should show
+    - Date
+    - Temp
+    - Description
+3. Add a text input to allow iput of a city or address. 
+  - Use Google Map api to convert the address to a geo location
+  - Use the KeyboardAvoidingView to make sure the text field moves out of the way of the keyboard. 
+  - Convert the searchbar component to React native
+    - Use the onChange set value pattern to hold the textfield value in component state
+    
 
 
 
