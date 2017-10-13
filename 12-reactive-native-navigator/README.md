@@ -1,8 +1,28 @@
 # React Native - Navigator
 
-React Native provides the ability to navigte between scenes. In this case I'm describing
-scenes that will take up the whole screen. Scenes are always a component of some kind.
-The Navigator component to swap one scene for another and keeps a history of the changes. 
+Mobile apps built for small screens usually use manage information by navigating between 
+screens or pages of data. Often a transition is applied to hint at the type of navigation
+that is being performed. 
+
+React Native Provides a couple solutions and more solutions are provided by third party 
+packages. The built in solutions are 
+
+- React Navigation - A cross platform solution that works on both iOS and Android. 
+supports stack and tabbed navigation. It is a JavaScript implementation with a 
+great amount of configurability. 
+- NavigatorIOS - An iOS only solution that provides a simple to configure solution that 
+wraps the native iOS UINavigationController class. 
+
+For more info on Navigation see the React Native Navigation guide. 
+
+- https://facebook.github.io/react-native/docs/navigation.html
+
+There are a couple more third party navigation libraries available and more than a few 
+options to using each of these. Check out these links to explore more options.  
+
+- https://github.com/wix/react-native-navigation
+- https://reactnavigation.org/docs/intro/
+- https://medium.com/the-react-native-log/thousand-ways-to-navigate-in-react-native-f7a1e311a0e8
 
 ## Navigator vs NavigatorIOS
 
