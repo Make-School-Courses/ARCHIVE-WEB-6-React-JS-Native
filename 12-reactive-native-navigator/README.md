@@ -110,6 +110,8 @@ class A extends Component {
 
 `navigate('b', { one: 1, two: 2 });`
 
+- Params: https://reactnavigation.org/docs/intro/#Passing-params
+
 ### Tutorial 
 
 The tutorials and documentation below is pretty good. 
