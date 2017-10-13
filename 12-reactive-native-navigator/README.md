@@ -28,75 +28,104 @@ options to using each of these. Check out these links to explore more options.
 
 React Native supplies a Navigator component to manage navigation. There are two versions:
 
-- Navigator - works on both Android and iOS
+- Reaxct Navigation - works on both Android and iOS
 - NavigatorIOS - only works on iOS provides better performance on iOS
 
-# Navigator 
+## Navigator 
 
-Navigator is a component that displays other components. Rather than adding child 
-components/scenes as you would with normally, instead with Navigtor you will supply 
-Navigator with an array of routes, and a handler to render those scenes: 
+The Navigator component is part of the React Navigation package. 
 
-`renderScene(route, navigator)`
+Navigation has several "Navigators" that can be used to create 
+common navigation schemes on mobile devices. 
 
-This method receives a route and a reference to the Navigator object. The idea is to 
-use the route object to determine which component to render as the new Scene, and use 
-the navigator object to display the scene. 
+- StackNavigator - Creates a navigation stack with a history. 
+This is a deep navigation. 
+- TabNavigator - Use for a tabbed navigation scheme. This is a 
+flat navigation scheme with a fixed number of choices. 
+- Drawer Navigator - Creates a side bar navigation scheme. This is a 
+flat navigation scheme with fixed number of choices. 
 
-# Routes 
+You can combine any of the navigators to create more complex navigation. 
 
-Routes are JavaScript objects that describe a scene to display. These are simple objects 
-that you define. They have no special characteristics, only what you define. 
+## StackNavigator
 
-Use routes to describe what should be shown. 
+The base coponent for a stack navigation scheme is the `StackNavigator`. 
+`StackNavigator` is a component that manages a group of other 
+components. Imagine you have a group of Components A, B, and C. 
 
-# Navigator object and History
+```
+const App = StackNavigator({
+  a: { screen: A },
+  b: { screen: B },
+  c: { screen: C }
+});
+```
 
-The navigator object acts as an array which holds your navigation history. You will 
-display a new scene by pushing a new component, or return the previous scene with
-pop. 
+In this scheme `A`, `B`, `C` would be React Components that could be 
+displayed by the `App` component. StackNavigator is supplied with an
+Object that defines a group of objects that each represent a screen 
+that can be displayed. 
 
-`navigator.push(route)`
+**navigationOptions** is a static property which is shared by all 
+StackNavigator children. Use it to set options on the navigator. 
+Set the title of the navbar like this: 
 
-or 
+```
+class A extends Component {
+  static navigationOptions = { title: "Screen" }; // Set the title
+  
+  render() {}
+    return (
+    <View>
+      <Text>A</Text>
+    </View>
+    );
+  );
+}
+```
 
-`navigator.pop()`
+**props.navigation** is passed to all navigator children and holds a 
+reference to the Navigator. Use this navigate to other screens. 
 
-You can also manipulate routes in other ways. 
+```
+class A extends Component {
+  static navigationOptions = { title: "Screen" };
+  const { navigate } = this.props.navigation; // get navigate
+  render() {
+    
+    return (
+    <View>
+      <Text>A</Text>
+      <Button onPress={()=>{
+        navigate('b'); // Navigates to B
+        title="Go B"; 
+      }} />
+    </View>
+    );
+  };
+}
+```
 
-## Initial route
+**params** pass variables to a new screen via navigate like this: 
 
-Navigator requires an initial or root scene. You must configure with an initial route. 
-Set this as a prop on Navigator. 
+`navigate('b', { one: 1, two: 2 });`
 
-`<Navigator initialRoute={someRoute}>`
+### Tutorial 
 
-## Rendering a route
+The tutorials and documentation below is pretty good. 
 
-The Navigator component requires that you define a renderScene prop. This is a method
-that receives a route and navigator as parameters. The renderScene method should 
-return a JSX component that will be displayed by Navigator as the next scene. 
+- https://reactnavigation.org/docs/intro/
 
-You use the route object and navigator to determine the next scene.
+## Challenge 
 
-# Strategies 
+You have a thing for math and Fibonacci numbers are all the rage at 
+interviews. Instantly generating a long list of numbers lacks style
+and misses the opportunity to enjoy each integer for it's own merits. 
+You want to create an app that displays each Fibonacci number on a
+screen. 
 
-Here are a couple strategies you might employ when using Navigator. 
+Use StackNavigator to display each Fibonacci number in sequence. 
+Each screen should display one number.
 
-## Configure a single component 
+Try this challenge in pairs. 
 
-You can use a single component to display different info by configuring the component 
-with info supplied via the route object. 
-
-## Displaying several different components.
-
-Use information contained in the route to determine which component to display. The 
-route might even contain the component as a property. 
-
-## Challenges
-
-- Use Navigator to create a series of scenes that are displayed in sequence by tapping 
-a Next button. 
-    - Add a Back button that navigates to the previous page. 
-- Create a list of cells in one view and a detail view. Tapping a cell should display 
-the detail view. 
