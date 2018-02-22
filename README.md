@@ -18,6 +18,8 @@ of modern web sites and pushed them into the realm of full fledged applications.
 modern web sites are built around a single web page powered by JavaScript that acts as
 a full fledged piece of software, often called Single Page Applications or SPAs. 
 
+Gmail was the first to prove you could make an amazing app with a single page. 
+
 This course focusses on modern front end web and mobile development with JavaScript. 
 In this class you will build modern, forward thinking web and native applications. 
 The toolset will be React, React-Native, NPM, Webpack.  
@@ -38,34 +40,37 @@ for making user interfaces, and improves on legacy methods.
 
 ## Lessons 
 
-- [Class 1](01-js-review-concepts)
-  - Intro JavaScript Review
-  - Challenges - JS
-- [Class 2](02-es6-concepts)
-  - ES6 JavaScript 
-  - Challenges ES6
-- [Class 3](03-react-intro)
+- [Class 1](03-react-intro)
   - Intro React
   - Challenges Components intro
-- [Class 4](04-component-tutorial)
+- [Class 2](04-component-tutorial)
   - React Component Tutorial
-- [Class 5](05-lab)
+- [Class 3](05-lab)
   - Lab Time
-- [Class 6](06-webpack-intro)
+- [Class 4](06-webpack-intro)
   - Bundling JS with Webpack
-- [Class 7](07-lab)
+- [Class 5](07-lab)
   - Lab Time
-- [Class 8](08-styling-components)
+- [Class 6](08-styling-components)
   - Styling components 
-- [Class 9](09-react-native)
+- [Class 7](09-react-native)
   - React Native intro
   - Native Project
-- [Class 10](10-native-components)
+- [Class 8](10-native-components)
   - Native Components
-- [Class 11](11-lab)
+- [Class 9](11-lab)
   - Lab
-- [Class 12](12-lab)
+- [Class 10](12-lab)
   - Lab
+  
+### Review 
+
+- [Review 1](01-js-review-concepts)
+  - Intro JavaScript Review
+  - Challenges - JS
+- [Review 2](02-es6-concepts)
+  - ES6 JavaScript 
+  - Challenges ES6
 
 ## Projects 
 

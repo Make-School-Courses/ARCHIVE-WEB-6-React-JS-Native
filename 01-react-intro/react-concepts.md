@@ -3,7 +3,9 @@
 **Components**
 
 React apps are built around components. Components represent presentational elements. In other
-words Components are things you see on the screen and interact with. Components are composable, 
+words Components are things you see on the screen and interact with. 
+
+Components are composable, 
 that is components can contain other components, which can contain still more components. 
 
 **Virtual DOM**
@@ -20,9 +22,8 @@ that allows you to write HTML tags along side your JS code.
 
 **Transpile**
 
-ES6 and JSX need to be transpiled into vanilla JS before it can be run in any web browser. 
+JSX need to be transpiled into vanilla JS before it can be run in any web browser. 
 Transpiling requires files be processed before they are run in the browser. 
-You will need a tool for this. 
 
 The example in this section uses uses an in browser process. Later in class we will precompile 
 everything using Webpack. 

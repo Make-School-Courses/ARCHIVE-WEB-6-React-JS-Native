@@ -52,3 +52,7 @@ are mixed with logic and structure. Some styles are not possible to apply inline
 require JS solutions. For example hover and other pseudo classes are not available 
 as inline styles. 
 
+#### Use a grid
+
+Define a grad and map elements to the grid with `grid-area`.
+

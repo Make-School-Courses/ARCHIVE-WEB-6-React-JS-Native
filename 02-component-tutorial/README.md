@@ -20,23 +20,27 @@ Important points from the tutorial:
 - making Interactive Components
 - Lifting up state
 
+**Discussion**
+
+- Outline the first couple problems 
+- Pseudo code the challenge problems 
+- Stub in component/methods/classes
+
 ## Projects 
 
 After working on tutorials you will want to make your own project. 
 Your goal is to comlete the two projects before the end of the term. 
 
 - API project 
-- 
+- React Native App
 
 ## Schedule 
 
-|    | Time    | Type       | Description                          |
-|----|---------|------------|--------------------------------------|
-| 1  | 5 min   | Intro      | Class introduction                   |
-| 2  | 5 min   | lecture    | Tutorial introduction                |
-| 3  | 30 min  | Challenges | Work on React Tutorial               |
-| -  | 10 min  | Break      | Ignore social media                  |
-| 4  | 10 min  | Group      | Components, Virtual DOM, JSX         |
-| 5  | 30 min  | Present    | Groups present to class              |
-| 6  | 20 min  | Challenges | Continue the challenges!             |
-| =  | 110 min | Total time | -                                    |
+|    | Time    | Type              | Description                          |
+|----|---------|-------------------|--------------------------------------|
+| 1  | 5 min   | Intro             | Class introduction                   |
+| 2  | 5 min   | lecture           | Tutorial introduction                |
+| 3  | 50 min  | I do We Do You Do | Solve the first part of the React Tutorial |
+| -  | 10 min  | Break             | Ignore social media                  |
+| 4  | 40 min  | Group             | Pair Program on React Tutorial       |
+
