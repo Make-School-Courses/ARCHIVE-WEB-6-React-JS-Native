@@ -65,10 +65,10 @@ for making user interfaces, and improves on legacy methods.
   
 ### Review 
 
-- [Review 1](01-js-review-concepts)
+- [Review 1](review-concepts/01-js-review-concepts)
   - Intro JavaScript Review
   - Challenges - JS
-- [Review 2](02-es6-concepts)
+- [Review 2](review-concepts/02-es6-concepts)
   - ES6 JavaScript 
   - Challenges ES6
 
