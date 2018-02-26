@@ -1,38 +1,36 @@
 # Component Tutorial 
 
-## Intro
+React is Components. Everything is built from Components. 
+Components define and display content. Components also pass 
+information to their child Components. Components contain 
+other components. 
 
-React was created at Facebook to solve many of the problems Facebook 
-encountered creating the Facebook web site. They have provided a 
-pretty good tutorial that covers many of the features of React and 
-points out some important concepts along the way. There is nothing 
-better than learning from the source!
+## Props and State 
 
-- https://facebook.github.io/react/tutorial/tutorial.html
+When creating Components you will inevitably end up working with 
+props and state. 
 
-Pay close attention to the section on "lifting up state" this gets to 
-a key aspect of React best practice. Digging deeper it says a lot 
-about how React/Components differ from MVC architecture. 
+[Slides](https://docs.google.com/presentation/d/1PWrJjFpxK90hJ8UOXaRqH-1AS0NfJC5CS9V_6AjKbN0/edit?usp=sharing)
 
-Important points from the tutorial:
+## Exercise
 
-- Passing Data through props
-- making Interactive Components
-- Lifting up state
+Display data with React.
 
-**Discussion**
+[Get the starter project](https://github.com/Product-College-Labs/Web-6-react-product-list-challenge)
 
-- Outline the first couple problems 
-- Pseudo code the challenge problems 
-- Stub in component/methods/classes
+The goal is to create a React project that displays some data. 
+The data is provided as JSON. You will use the mock up data 
+for this project in order to focus on making components. 
 
-## Projects 
+Read the instructions and solve the challenges in the started project
+readme. 
 
-After working on tutorials you will want to make your own project. 
-Your goal is to comlete the two projects before the end of the term. 
+## Competencies
 
-- API project 
-- React Native App
+- Identify props and state
+- Identify where and when to use map
+- Differentiate between props and state
+- Build components that use props and state
 
 ## Schedule 
 
