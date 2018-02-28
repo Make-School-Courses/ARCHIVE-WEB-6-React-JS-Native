@@ -40,27 +40,28 @@ for making user interfaces, and improves on legacy methods.
 
 ## Lessons 
 
-- [Class 1](03-react-intro)
+- [Class 1](01-react-intro)
   - Intro React
   - Challenges Components intro
-- [Class 2](04-component-tutorial)
+- [Class 2](02-component-tutorial)
   - React Component Tutorial
-- [Class 3](05-lab)
-  - Lab Time
-- [Class 4](06-webpack-intro)
-  - Bundling JS with Webpack
-- [Class 5](07-lab)
-  - Lab Time
-- [Class 6](08-styling-components)
-  - Styling components 
-- [Class 7](09-react-native)
+- [Class 3](03-api-project)
+  - API tutorial with mocked up data challenge
+  - Intro to controlled components: input
+- [Class 4](04-lab)
+  - Lab
+- [Class 5](05-lab)
+  - Lab
+- [Class 6](06-react-native)
   - React Native intro
   - Native Project
-- [Class 8](10-native-components)
+- [Class 7](07-native-components)
   - Native Components
-- [Class 9](11-lab)
+- [Class 8](08-styling-components)
+  - Styling components 
+- [Class 9](09-react-navigator)
   - Lab
-- [Class 10](12-lab)
+- [Class 10](10-lab)
   - Lab
   
 ### Review 
