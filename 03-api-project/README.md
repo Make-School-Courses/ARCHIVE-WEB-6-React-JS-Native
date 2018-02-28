@@ -18,10 +18,10 @@ basic features working.
 Find an API to work with. Choose something simple for the focus of this
 project. You can add more features later. 
 
-[Rapid API](https://rapidapi.com)
-[Programable Web](https://www.programmableweb.com/apis/directory)
-[API List](https://apilist.fun)
-[Any API](https://any-api.com)
+- [Rapid API](https://rapidapi.com)
+- [Programable Web](https://www.programmableweb.com/apis/directory)
+- [API List](https://apilist.fun)
+- [Any API](https://any-api.com)
 
 ## Create React App
 
