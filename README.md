@@ -50,8 +50,8 @@ for making user interfaces, and improves on legacy methods.
   - Intro to controlled components: input
 - [Class 4](04-lab)
   - Lab
-- [Class 5](05-lab)
-  - Lab
+- [Class 5](05-controlled-components)
+  - Creating React forms
 - [Class 6](06-react-native)
   - React Native intro
   - Native Project
