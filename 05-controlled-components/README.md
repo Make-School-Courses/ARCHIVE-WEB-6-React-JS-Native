@@ -105,7 +105,7 @@ https://spring.io/understanding/CORS
 
 ## Challenges 
 
-https://github.com/Product-College-Labs/web-6--react-weather-api-starter
+https://github.com/Product-College-Labs/web-6-react-weather-api-starter
 
 
 
