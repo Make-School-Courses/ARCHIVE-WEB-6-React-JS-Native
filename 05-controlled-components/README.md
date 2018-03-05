@@ -34,6 +34,51 @@ https://reactjs.org/docs/forms.html
 Use the JavaScript fetch API to fetch internet data. Use fetch to make 
 API network requests. 
 
+## Organizing components by re-exporting
+
+Consolidate related files into a directory, or subdirectory. You can 
+re-export these files from the base directory. For example: 
+
+- components 
+  - weather 
+    - components 
+      - geolocation.js
+      - weather-view.js
+      - weather.js
+    - index.js
+    
+The weather directory contains a set of components that 
+manages a sysytem to display weather data. The components 
+that collaborate are imported from weather/components/ into
+index.js, and exported again. 
+
+```JavaScript
+// index.js
+import Weather from './components/weather'
+import GeoLocation from './components/geolocation'
+import WeatherView from './components/weather-view'
+
+export { GeoLocation, WeatherView }
+export default Weather
+```
+
+Import these from index.js with:
+
+```JavaScript
+import Weather, { GeoLocation, WeatherView } from './components/weather/'
+```
+
+Notice `GeoLocation` and `WeatherView` were default exports from 
+their source files, but only `Weather` is the default export from 
+`component/weather`.
+
+Since we are importing from `index.js` we don't need to include the file 
+name in the path. 
+
+`... from './components/weather/'`
+
+http://exploringjs.com/es6/ch_modules.html
+
 ### JavaScript APIs 
 
 As a bonus problem challenge yourself to use a JavaScript API. 

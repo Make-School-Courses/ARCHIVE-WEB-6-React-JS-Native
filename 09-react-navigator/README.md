@@ -20,9 +20,9 @@ For more info on Navigation see the React Native Navigation guide.
 There are a couple more third party navigation libraries available and more than a few 
 options to using each of these. Check out these links to explore more options.  
 
+- https://reacttraining.com/react-router/web/guides/philosophy
 - https://github.com/wix/react-native-navigation
-- https://reactnavigation.org/docs/intro/
-- https://medium.com/the-react-native-log/thousand-ways-to-navigate-in-react-native-f7a1e311a0e8
+- https://reactnavigation.org/docs/getting-started.html
 
 ## Navigator vs NavigatorIOS
 
