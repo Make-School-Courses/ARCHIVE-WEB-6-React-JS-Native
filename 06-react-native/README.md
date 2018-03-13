@@ -36,6 +36,20 @@ Build for native with React using JavaScript!
   - Run your React Project in the Android Simulator on your laptop or desktop
 - Stretch Goal: Run your project in Expo on both an Android and iOS device
 
+## Video tutorial 
+
+Follow along with a video tutorial introduction to React Native. 
+
+- [React Native Intro - 8 Videos](https://www.youtube.com/watch?v=CN0LAbiU1CQ&list=PLoN_ejT35AEjfN4JsvEYyYpw4zjlv89En)
+
+1. [Getting Started](https://www.youtube.com/watch?v=CN0LAbiU1CQ&index=1&list=PLoN_ejT35AEjfN4JsvEYyYpw4zjlv89En)
+1. [Testing in the simulator](https://www.youtube.com/watch?v=5b3Zj8tqZQc&list=PLoN_ejT35AEjfN4JsvEYyYpw4zjlv89En&index=2)
+1. [Docs and Wanrings](https://www.youtube.com/watch?v=D-Z8iSYKK70&index=3&list=PLoN_ejT35AEjfN4JsvEYyYpw4zjlv89En)
+1. [Flex Box intro](https://www.youtube.com/watch?v=soy5-2s2sjo&list=PLoN_ejT35AEjfN4JsvEYyYpw4zjlv89En&index=4)
+1. [Nested Flex Containers](https://www.youtube.com/watch?v=W4dKwiXOhu0&index=5&list=PLoN_ejT35AEjfN4JsvEYyYpw4zjlv89En)
+1. [Working with Components](https://www.youtube.com/watch?v=D6zt9QNIVa0&index=6&list=PLoN_ejT35AEjfN4JsvEYyYpw4zjlv89En)
+1. [Passing Props](https://www.youtube.com/watch?v=P7U4wyZUKwg&list=PLoN_ejT35AEjfN4JsvEYyYpw4zjlv89En&index=7)
+1. [Mapping props to Components](https://www.youtube.com/watch?v=mIo_Ipo5cjM&index=8&list=PLoN_ejT35AEjfN4JsvEYyYpw4zjlv89En)
 
 ## Notes
 
