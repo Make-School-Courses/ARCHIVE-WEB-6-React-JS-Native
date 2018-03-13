@@ -1,10 +1,43 @@
-# React Native
+# React Native - Class 6
 
 Build for native with React using JavaScript!
 
 - https://facebook.github.io/react-native/docs/getting-started.html
 
-## Overview 
+## Activity 
+
+- Install React Native command line tool
+- Create React native project
+- Review fundamental concepts
+  - Testing React Native Projects 
+  - Native Components
+  - Stlying Native Components
+
+## Objectives  
+
+- Intall React native Command Line tool
+- Create React Native test project
+- Run the React Native Project in the Simulator
+- Install Expo 
+- Run the React Native Project on a real device
+- Styling native components
+
+## Challenges 
+
+- Install React Native Command Line Tool
+- Create a new React Native Project
+- Mock up the weather app in react native
+  - Your app displays the information supplied in the weather object
+  - Your app layout the information in the same arrangement as the mock up images
+- Run your project in the iOS simulator on your laptop or desktop computer
+- Install the expo app on your Mobile device
+- Run your React Native project on your mobile device with Expo
+- Stretch Goal: Download Android Studio
+  - Run your React Project in the Android Simulator on your laptop or desktop
+- Stretch Goal: Run your project in Expo on both an Android and iOS device
+
+
+## Notes
 
 React Native creates a *truly native* projects that run on React. These are *not*
 hybrid HTML apps. 
