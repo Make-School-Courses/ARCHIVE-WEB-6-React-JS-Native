@@ -144,15 +144,3 @@ layout to more accurately match the mock up.
 
 ![weather-mockup-wire-simple](weather-mockup-wire-detailed.png)
 
-
-Class Schedule 
-
-|time  |     |Activity   |Description      |
-|------|-----|-----------|-----------------|
-| 5mins|5min |Talk       |Intro            |
-| 5mins|10min|Talk       |React Native Components |
-| 5mins|15min|Work       |Install React Native Tools |
-| 5mins|20min|Pair       |Create and Run a React Native Project |
-|10mins|30min|share      |Share Test ideas |
-|10mins|40min|We Do      |Set up Node, Mocha, Chai |
-|20mins|60min|I Do We Do |Mocha it() |
