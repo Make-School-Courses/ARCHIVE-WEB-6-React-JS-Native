@@ -121,10 +121,21 @@ emphasizes functions, immutable data, and avoids
 global state.
 - ES6: The latest version of the JavaScript language.
 
-### Resources
+## Resources
 
 - React: https://facebook.github.io/react/
 - React Native: https://facebook.github.io/react-native/
 - Webpack: https://webpack.github.io
 - Node: https://nodejs.org/en/
 - NPM: https://www.npmjs.com
+
+### Reading 
+
+- [You Don't Know JS - Scope and Closures](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures)
+- [You Don't Know JS - This and Object Prototypes](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
+- [You Don't Know JS - Types and Grammar](https://github.com/getify/You-Dont-Know-JS/blob/master/types%20&%20grammar/README.md#you-dont-know-js-types--grammar)
+- [You Don't Know JS - Async Performance](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance)
+- [You Don't Know JS - ES6 and Beyond](https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20&%20beyond/README.md#you-dont-know-js-es6--beyond)
+- [React Armory - Learn React by Itself](https://reactarmory.com/guides/learn-react-by-itself/react-basics)
+- [Survive JS - React](https://survivejs.com/react/introduction/)
+
