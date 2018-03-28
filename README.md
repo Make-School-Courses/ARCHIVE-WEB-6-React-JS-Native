@@ -41,16 +41,21 @@ for making user interfaces, and improves on legacy methods.
 ## Lessons 
 
 - [Class 1](01-react-intro)
+  - Reading (before class): https://reactarmory.com/guides/learn-react-by-itself/react-basics
   - Intro React
   - Challenges Components intro
 - [Class 2](02-component-tutorial)
+  - Reading (before class): https://reactjs.org/tutorial/tutorial.html
   - React Component Tutorial
 - [Class 3](03-api-project)
+  - Reading (before class): https://reactarmory.com/guides/learn-react-by-itself/custom-react-elements
   - API tutorial with mocked up data challenge
   - Intro to controlled components: input
 - [Class 4](04-lab)
+  - Reading (before class): https://reactarmory.com/guides/learn-react-by-itself/rendering-and-rerendering
   - Lab
 - [Class 5](05-controlled-components)
+  - Reading (before class): https://reactarmory.com/guides/learn-react-by-itself/inputs-and-events
   - Creating React forms
 - [Class 6](06-react-native)
   - React Native intro
