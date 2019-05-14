@@ -1,4 +1,6 @@
-# WEB 6 - React JS/Native
+# ARCHIVE - WEB 6 - React JS/Native
+
+## NOTE: This repo is no longer maintained
 
 ## Perequisites 
 
